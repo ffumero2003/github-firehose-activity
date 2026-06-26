@@ -1,0 +1,51 @@
+# dbt_gh/models/sources.yml
+version: 2
+
+sources:
+  - name: github_firehose
+    database: github-firehose-fumero
+    schema: github_firehose
+    tables:
+      - name: dim_actor
+        columns:
+          - name: actor_id
+            tests:
+              - unique
+              - not_null
+
+      - name: dim_repo
+        columns:
+          - name: repo_id
+            tests:
+              - unique
+              - not_null
+
+      - name: dim_org
+        columns:
+          - name: org_id
+            tests:
+              - unique
+              - not_null
+
+      - name: dim_time
+        columns:
+          - name: date_key
+            tests:
+              - unique
+              - not_null
+
+      - name: fact_events
+        columns:
+          - name: actor_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('github_firehose', 'dim_actor')
+                  field: actor_id
+          - name: repo_id
+            tests:
+              - relationships:
+                  to: source('github_firehose', 'dim_repo')
+                  field: repo_id
+
+      - name: fact_commits

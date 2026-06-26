@@ -1,0 +1,11 @@
+# ~/.dbt/profiles.yml
+github_firehose:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth # uses your gcloud application-default login
+      project: github-firehose-fumero # your GCP project
+      dataset: github_firehose # where dbt writes models
+      location: US # match your dataset's region
+      threads: 4

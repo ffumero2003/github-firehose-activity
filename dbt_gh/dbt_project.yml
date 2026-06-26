@@ -1,0 +1,12 @@
+# dbt_gh/dbt_project.yml
+name: "github_firehose"
+version: "1.0.0"
+profile: "github_firehose" # must match the profile name in profiles.yml
+
+model-paths: ["models"] # where your SQL models live
+
+models:
+  github_firehose:
+    +materialized: view # default: build models as views (cheap, no storage)
+    marts:
+      +materialized: table # marts become real tables (faster to query, for the dashboard)

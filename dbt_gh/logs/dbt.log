@@ -1,0 +1,1177 @@
+[0m15:55:04.010111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10438a7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105534220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105534dc0>]}
+
+
+============================== 15:55:04.013168 | ed3f68fe-63cd-4619-8213-18c2a1a56cbb ==============================
+[0m15:55:04.013168 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:55:04.013527 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'target_path': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'fail_fast': 'False', 'empty': 'None', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'printer_width': '80', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'invocation_command': 'dbt debug'}
+[0m15:55:04.025331 [info ] [MainThread]: dbt version: 1.11.11
+[0m15:55:04.025614 [info ] [MainThread]: python version: 3.10.7
+[0m15:55:04.025794 [info ] [MainThread]: python path: /Users/felipefumero/projects/github-firehose-activity/venv/bin/python3
+[0m15:55:04.025956 [info ] [MainThread]: os info: macOS-26.5.1-arm64-arm-64bit
+[0m15:55:05.029492 [info ] [MainThread]: Using profiles dir at /Users/felipefumero/projects/github-firehose-activity/dbt_gh
+[0m15:55:05.029830 [info ] [MainThread]: Using profiles.yml file at /Users/felipefumero/projects/github-firehose-activity/dbt_gh/profiles.yml
+[0m15:55:05.030021 [info ] [MainThread]: Using dbt_project.yml file at /Users/felipefumero/projects/github-firehose-activity/dbt_gh/dbt_project.yml
+[0m15:55:05.030212 [info ] [MainThread]: adapter type: bigquery
+[0m15:55:05.030372 [info ] [MainThread]: adapter version: 1.11.3
+[0m15:55:05.085873 [info ] [MainThread]: Configuration:
+[0m15:55:05.086212 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:55:05.086395 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:55:05.086553 [info ] [MainThread]: Required dependencies:
+[0m15:55:05.086786 [debug] [MainThread]: Executing "git --help"
+[0m15:55:05.103033 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:55:05.103655 [debug] [MainThread]: STDERR: "b''"
+[0m15:55:05.103895 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:55:05.104105 [info ] [MainThread]: Connection:
+[0m15:55:05.104414 [info ] [MainThread]:   method: oauth
+[0m15:55:05.104649 [info ] [MainThread]:   database: github-firehose-fumero
+[0m15:55:05.104822 [info ] [MainThread]:   execution_project: github-firehose-fumero
+[0m15:55:05.105034 [info ] [MainThread]:   schema: github_firehose
+[0m15:55:05.105199 [info ] [MainThread]:   location: US
+[0m15:55:05.105357 [info ] [MainThread]:   priority: None
+[0m15:55:05.105556 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m15:55:05.105771 [info ] [MainThread]:   impersonate_service_account: None
+[0m15:55:05.106017 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m15:55:05.106182 [info ] [MainThread]:   job_retries: 1
+[0m15:55:05.106572 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m15:55:05.106947 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m15:55:05.107110 [info ] [MainThread]:   timeout_seconds: None
+[0m15:55:05.107480 [info ] [MainThread]:   client_id: None
+[0m15:55:05.107698 [info ] [MainThread]:   token_uri: None
+[0m15:55:05.107853 [info ] [MainThread]:   compute_region: None
+[0m15:55:05.108000 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m15:55:05.108152 [info ] [MainThread]:   gcs_bucket: None
+[0m15:55:05.108306 [info ] [MainThread]:   dataproc_batch: None
+[0m15:55:05.108829 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m15:55:05.242363 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m15:55:05.242739 [debug] [MainThread]: On debug: select 1 as id
+[0m15:55:05.242964 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:55:08.934667 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:95937954-8168-4117-a198-93baf9f4dbc5&page=queryresults
+[0m15:55:09.300476 [debug] [MainThread]: SQL status: OK in 0.364 seconds
+[0m15:55:09.764582 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:55:09.765707 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:55:09.810893 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 5.8601475, "process_in_blocks": "0", "process_kernel_time": 0.352039, "process_mem_max_rss": "205930496", "process_out_blocks": "0", "process_user_time": 1.396733}
+[0m15:55:09.811961 [debug] [MainThread]: Command `dbt debug` succeeded at 15:55:09.811775 after 5.86 seconds
+[0m15:55:09.812587 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:55:09.813187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10438a7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11366b550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10563c220>]}
+[0m15:55:09.813783 [debug] [MainThread]: Flushing usage events
+[0m15:55:12.612741 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:02:52.472181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d4a830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb51210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb50e20>]}
+
+
+============================== 16:02:52.475280 | 88814f1f-14ff-420e-95c5-e4238ae29a0f ==============================
+[0m16:02:52.475280 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:02:52.475667 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'introspect': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'target_path': 'None', 'invocation_command': 'dbt run --select events_per_repo_per_day', 'fail_fast': 'False', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'quiet': 'False', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'profiles_dir': '/Users/felipefumero/.dbt', 'partial_parse': 'True', 'printer_width': '80', 'empty': 'False', 'log_format': 'default'}
+[0m16:02:52.477688 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'github_firehose'
+[0m16:02:52.479943 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.061628625, "process_in_blocks": "0", "process_kernel_time": 0.130366, "process_mem_max_rss": "107659264", "process_out_blocks": "0", "process_user_time": 0.743206}
+[0m16:02:52.480223 [debug] [MainThread]: Command `dbt run` failed at 16:02:52.480170 after 0.06 seconds
+[0m16:02:52.480420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d4a830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba40ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba40be0>]}
+[0m16:02:52.480621 [debug] [MainThread]: Flushing usage events
+[0m16:02:53.507941 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:03:40.128754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a406740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bff11e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bff0df0>]}
+
+
+============================== 16:03:40.131865 | f18ebd87-845d-4669-aa6d-d9137702a00f ==============================
+[0m16:03:40.131865 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:03:40.132258 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'quiet': 'False', 'debug': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'log_format': 'default', 'static_parser': 'True', 'empty': 'None', 'write_json': 'True', 'version_check': 'True', 'no_print': 'None', 'invocation_command': 'dbt debug', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'printer_width': '80', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'target_path': 'None', 'use_colors': 'True'}
+[0m16:03:40.144571 [info ] [MainThread]: dbt version: 1.11.11
+[0m16:03:40.144891 [info ] [MainThread]: python version: 3.10.7
+[0m16:03:40.145085 [info ] [MainThread]: python path: /Users/felipefumero/projects/github-firehose-activity/venv/bin/python3
+[0m16:03:40.145252 [info ] [MainThread]: os info: macOS-26.5.1-arm64-arm-64bit
+[0m16:03:41.169074 [info ] [MainThread]: Using profiles dir at /Users/felipefumero/projects/github-firehose-activity/dbt_gh
+[0m16:03:41.169402 [info ] [MainThread]: Using profiles.yml file at /Users/felipefumero/projects/github-firehose-activity/dbt_gh/profiles.yml
+[0m16:03:41.169585 [info ] [MainThread]: Using dbt_project.yml file at /Users/felipefumero/projects/github-firehose-activity/dbt_gh/dbt_project.yml
+[0m16:03:41.169766 [info ] [MainThread]: adapter type: bigquery
+[0m16:03:41.169931 [info ] [MainThread]: adapter version: 1.11.3
+[0m16:03:41.225159 [info ] [MainThread]: Configuration:
+[0m16:03:41.225494 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:03:41.225675 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:03:41.225839 [info ] [MainThread]: Required dependencies:
+[0m16:03:41.226065 [debug] [MainThread]: Executing "git --help"
+[0m16:03:41.249778 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:03:41.250363 [debug] [MainThread]: STDERR: "b''"
+[0m16:03:41.250582 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:03:41.250783 [info ] [MainThread]: Connection:
+[0m16:03:41.251033 [info ] [MainThread]:   method: oauth
+[0m16:03:41.251195 [info ] [MainThread]:   database: github-firehose-fumero
+[0m16:03:41.251350 [info ] [MainThread]:   execution_project: github-firehose-fumero
+[0m16:03:41.251505 [info ] [MainThread]:   schema: github_firehose
+[0m16:03:41.251655 [info ] [MainThread]:   location: US
+[0m16:03:41.251804 [info ] [MainThread]:   priority: None
+[0m16:03:41.251956 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:03:41.252117 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:03:41.252266 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:03:41.252414 [info ] [MainThread]:   job_retries: 1
+[0m16:03:41.252562 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:03:41.252713 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m16:03:41.252859 [info ] [MainThread]:   timeout_seconds: None
+[0m16:03:41.253008 [info ] [MainThread]:   client_id: None
+[0m16:03:41.253155 [info ] [MainThread]:   token_uri: None
+[0m16:03:41.253302 [info ] [MainThread]:   compute_region: None
+[0m16:03:41.253450 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:03:41.253599 [info ] [MainThread]:   gcs_bucket: None
+[0m16:03:41.253745 [info ] [MainThread]:   dataproc_batch: None
+[0m16:03:41.254156 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:03:41.350288 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:03:41.350653 [debug] [MainThread]: On debug: select 1 as id
+[0m16:03:41.350891 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:03:43.104604 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:02e3febb-6d25-4ca0-8fb5-02f6dae9459c&page=queryresults
+[0m16:03:43.546544 [debug] [MainThread]: SQL status: OK in 0.439 seconds
+[0m16:03:45.659722 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:03:45.660958 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:03:45.670670 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 5.595875, "process_in_blocks": "0", "process_kernel_time": 0.368839, "process_mem_max_rss": "204521472", "process_out_blocks": "0", "process_user_time": 1.43086}
+[0m16:03:45.671662 [debug] [MainThread]: Command `dbt debug` succeeded at 16:03:45.671478 after 5.60 seconds
+[0m16:03:45.672283 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:03:45.672872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a406740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12d472620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0f0190>]}
+[0m16:03:45.673467 [debug] [MainThread]: Flushing usage events
+[0m16:03:46.400877 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:03:52.462691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103906800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b0d1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b0cdf0>]}
+
+
+============================== 16:03:52.465651 | ad5948a3-01cf-485d-b1e8-279a1897a86c ==============================
+[0m16:03:52.465651 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:03:52.465999 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select events_per_repo_per_day', 'cache_selected_only': 'False', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'warn_error': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'use_experimental_parser': 'False', 'write_json': 'True', 'debug': 'False', 'version_check': 'True', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'empty': 'False', 'no_print': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m16:03:53.233446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129bc9360>]}
+[0m16:03:53.269245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ab5ff0>]}
+[0m16:03:53.269768 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:03:53.374595 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:03:53.375106 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:03:53.375340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129d81450>]}
+[0m16:03:54.158417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ac85450>]}
+[0m16:03:54.209937 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:03:54.211431 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:03:54.219179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ae64880>]}
+[0m16:03:54.219483 [info ] [MainThread]: Found 1 model, 6 sources, 553 macros
+[0m16:03:54.219687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ae64ca0>]}
+[0m16:03:54.220356 [info ] [MainThread]: 
+[0m16:03:54.220569 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:03:54.220734 [info ] [MainThread]: 
+[0m16:03:54.221009 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:03:54.221454 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero'
+[0m16:03:54.221669 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:03:55.715323 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_github-firehose-fumero, now list_github-firehose-fumero_github_firehose)
+[0m16:03:55.716375 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:03:56.206239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ac9eec0>]}
+[0m16:03:56.207579 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:03:56.214457 [debug] [Thread-1 (]: Began running node model.github_firehose.events_per_repo_per_day
+[0m16:03:56.215515 [info ] [Thread-1 (]: 1 of 1 START sql table model github_firehose.events_per_repo_per_day ........... [RUN]
+[0m16:03:56.216335 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now model.github_firehose.events_per_repo_per_day)
+[0m16:03:56.216968 [debug] [Thread-1 (]: Began compiling node model.github_firehose.events_per_repo_per_day
+[0m16:03:56.231369 [debug] [Thread-1 (]: Writing injected SQL for node "model.github_firehose.events_per_repo_per_day"
+[0m16:03:56.232768 [debug] [Thread-1 (]: Began executing node model.github_firehose.events_per_repo_per_day
+[0m16:03:56.270625 [debug] [Thread-1 (]: Writing runtime sql for node "model.github_firehose.events_per_repo_per_day"
+[0m16:03:56.271557 [debug] [Thread-1 (]: On model.github_firehose.events_per_repo_per_day: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.events_per_repo_per_day"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`events_per_repo_per_day`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- events_per_repo_per_day.sql
+-- Mart: how many events each repo had, per day, by type.
+-- Joins the fact to dim_repo for the readable repo name.
+
+select
+    f.date_key,
+    f.repo_id,
+    r.repo_name,
+    r.repo_owner,
+    f.event_type,
+    count(*) as event_count          -- one row per event → count them
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+left join `github-firehose-fumero`.`github_firehose`.`dim_repo` r
+    on f.repo_id = r.repo_id
+group by 1, 2, 3, 4, 5               -- group by everything that isn't the aggregate
+    );
+  
+[0m16:03:56.271925 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:03:57.193565 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:61061d23-bc75-4453-a749-3d7a1f895000&page=queryresults
+[0m16:04:03.544258 [debug] [Thread-1 (]: SQL status: OK in 6.349 seconds
+[0m16:04:03.954572 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad5948a3-01cf-485d-b1e8-279a1897a86c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ae64c10>]}
+[0m16:04:03.955444 [info ] [Thread-1 (]: 1 of 1 OK created sql table model github_firehose.events_per_repo_per_day ...... [[32mCREATE TABLE (667.8k rows, 106.3 MiB processed)[0m in 7.73s]
+[0m16:04:03.956074 [debug] [Thread-1 (]: Finished running node model.github_firehose.events_per_repo_per_day
+[0m16:04:03.957212 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:04:03.957886 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:04:03.958214 [debug] [MainThread]: Connection 'model.github_firehose.events_per_repo_per_day' was properly closed.
+[0m16:04:03.958537 [info ] [MainThread]: 
+[0m16:04:03.958865 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 9.74 seconds (9.74s).
+[0m16:04:03.959501 [debug] [MainThread]: Command end result
+[0m16:04:03.989896 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:04:03.991420 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:04:03.995463 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m16:04:03.995682 [info ] [MainThread]: 
+[0m16:04:03.995951 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:04:03.996138 [info ] [MainThread]: 
+[0m16:04:03.996345 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:04:04.000122 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.58204, "process_in_blocks": "0", "process_kernel_time": 0.336441, "process_mem_max_rss": "222560256", "process_out_blocks": "0", "process_user_time": 2.421595}
+[0m16:04:04.000460 [debug] [MainThread]: Command `dbt run` succeeded at 16:04:04.000398 after 11.58 seconds
+[0m16:04:04.000714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103906800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c7d000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b590b20>]}
+[0m16:04:04.000954 [debug] [MainThread]: Flushing usage events
+[0m16:04:04.500700 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:06:23.113341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039d2890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bd9240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bd8e50>]}
+
+
+============================== 16:06:23.116531 | baf3f3fa-416d-447a-b9db-492f5780ea5e ==============================
+[0m16:06:23.116531 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:06:23.116915 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'static_parser': 'True', 'target_path': 'None', 'quiet': 'False', 'invocation_command': 'dbt run --select top_contributors', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'empty': 'False', 'debug': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'no_print': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'printer_width': '80', 'version_check': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'write_json': 'True'}
+[0m16:06:24.309547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10221d990>]}
+[0m16:06:24.346483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043eb250>]}
+[0m16:06:24.346950 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:06:24.454715 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:06:24.545047 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m16:06:24.545430 [debug] [MainThread]: Partial parsing: added file: github_firehose://models/marts/top_contributors.sql
+[0m16:06:24.701864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136d4100>]}
+[0m16:06:24.809252 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:06:24.810943 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:06:24.817698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136b01c0>]}
+[0m16:06:24.818046 [info ] [MainThread]: Found 2 models, 6 sources, 553 macros
+[0m16:06:24.818262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136b2e30>]}
+[0m16:06:24.818990 [info ] [MainThread]: 
+[0m16:06:24.819202 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:06:24.819371 [info ] [MainThread]: 
+[0m16:06:24.819651 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:06:24.820096 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero'
+[0m16:06:24.820335 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:06:26.461461 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_github-firehose-fumero, now list_github-firehose-fumero_github_firehose)
+[0m16:06:26.462469 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:06:27.128148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136c9c00>]}
+[0m16:06:27.129335 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:06:27.135358 [debug] [Thread-1 (]: Began running node model.github_firehose.top_contributors
+[0m16:06:27.136633 [info ] [Thread-1 (]: 1 of 1 START sql table model github_firehose.top_contributors .................. [RUN]
+[0m16:06:27.137716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now model.github_firehose.top_contributors)
+[0m16:06:27.138346 [debug] [Thread-1 (]: Began compiling node model.github_firehose.top_contributors
+[0m16:06:27.152748 [debug] [Thread-1 (]: Writing injected SQL for node "model.github_firehose.top_contributors"
+[0m16:06:27.153748 [debug] [Thread-1 (]: Began executing node model.github_firehose.top_contributors
+[0m16:06:27.192603 [debug] [Thread-1 (]: Writing runtime sql for node "model.github_firehose.top_contributors"
+[0m16:06:27.193393 [debug] [Thread-1 (]: On model.github_firehose.top_contributors: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.top_contributors"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`top_contributors`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- top_contributors.sql
+-- Mart: which actors created the most events.
+-- Fact (events) joined to dim_actor for the readable login.
+
+select
+    f.actor_id,
+    a.actor_login,
+    count(*) as event_count          -- one row per event → count per actor
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+left join `github-firehose-fumero`.`github_firehose`.`dim_actor` a
+    on f.actor_id = a.actor_id
+group by 1, 2                         -- group by the non-aggregate columns (actor_id, actor_login)
+    );
+  
+[0m16:06:27.193919 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:06:28.219207 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:92423122-5ef2-4cf4-8208-aba53fb1c8a9&page=queryresults
+[0m16:06:32.883128 [debug] [Thread-1 (]: SQL status: OK in 4.662 seconds
+[0m16:06:33.287457 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baf3f3fa-416d-447a-b9db-492f5780ea5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ab89d0>]}
+[0m16:06:33.288487 [info ] [Thread-1 (]: 1 of 1 OK created sql table model github_firehose.top_contributors ............. [[32mCREATE TABLE (418.1k rows, 31.0 MiB processed)[0m in 6.15s]
+[0m16:06:33.289241 [debug] [Thread-1 (]: Finished running node model.github_firehose.top_contributors
+[0m16:06:33.290523 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:06:33.291197 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:06:33.291528 [debug] [MainThread]: Connection 'model.github_firehose.top_contributors' was properly closed.
+[0m16:06:33.291863 [info ] [MainThread]: 
+[0m16:06:33.292192 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 8.47 seconds (8.47s).
+[0m16:06:33.292867 [debug] [MainThread]: Command end result
+[0m16:06:33.325039 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:06:33.326702 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:06:33.331214 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m16:06:33.331461 [info ] [MainThread]: 
+[0m16:06:33.331744 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:06:33.331937 [info ] [MainThread]: 
+[0m16:06:33.332149 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:06:33.335954 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.273501, "process_in_blocks": "0", "process_kernel_time": 0.411453, "process_mem_max_rss": "213663744", "process_out_blocks": "0", "process_user_time": 1.971298}
+[0m16:06:33.336281 [debug] [MainThread]: Command `dbt run` succeeded at 16:06:33.336231 after 10.27 seconds
+[0m16:06:33.336543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039d2890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10221d990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11361e3b0>]}
+[0m16:06:33.336780 [debug] [MainThread]: Flushing usage events
+[0m16:06:34.251544 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:07:56.098846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b06770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10684d1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10684cdf0>]}
+
+
+============================== 16:07:56.102077 | 689c5f38-5ebd-47f1-af35-b47b4eaf1406 ==============================
+[0m16:07:56.102077 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:07:56.102429 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'no_print': 'None', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'quiet': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'invocation_command': 'dbt run --select pr_throughput issue_activity', 'empty': 'False', 'printer_width': '80', 'introspect': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'debug': 'False', 'target_path': 'None'}
+[0m16:07:57.265681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10254d270>]}
+[0m16:07:57.299608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066f7c40>]}
+[0m16:07:57.300070 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:07:57.409092 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:07:57.494264 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m16:07:57.494598 [debug] [MainThread]: Partial parsing: added file: github_firehose://models/marts/issue_activity.sql
+[0m16:07:57.494795 [debug] [MainThread]: Partial parsing: added file: github_firehose://models/marts/pr_throughput.sql
+[0m16:07:57.649200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13a3d4130>]}
+[0m16:07:57.751799 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:07:57.753323 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:07:57.760080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13a3cfd60>]}
+[0m16:07:57.760411 [info ] [MainThread]: Found 4 models, 6 sources, 553 macros
+[0m16:07:57.760612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13a3cc5b0>]}
+[0m16:07:57.761364 [info ] [MainThread]: 
+[0m16:07:57.761579 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:07:57.761741 [info ] [MainThread]: 
+[0m16:07:57.762015 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:07:57.764426 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero'
+[0m16:07:57.764654 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:07:59.199233 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_github-firehose-fumero, now list_github-firehose-fumero_github_firehose)
+[0m16:07:59.200412 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:07:59.714507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x139da1c90>]}
+[0m16:07:59.715824 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:07:59.721419 [debug] [Thread-1 (]: Began running node model.github_firehose.issue_activity
+[0m16:07:59.722126 [debug] [Thread-2 (]: Began running node model.github_firehose.pr_throughput
+[0m16:07:59.722815 [info ] [Thread-1 (]: 1 of 2 START sql table model github_firehose.issue_activity .................... [RUN]
+[0m16:07:59.723505 [info ] [Thread-2 (]: 2 of 2 START sql table model github_firehose.pr_throughput ..................... [RUN]
+[0m16:07:59.724066 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now model.github_firehose.issue_activity)
+[0m16:07:59.724557 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.github_firehose.pr_throughput'
+[0m16:07:59.724967 [debug] [Thread-1 (]: Began compiling node model.github_firehose.issue_activity
+[0m16:07:59.725335 [debug] [Thread-2 (]: Began compiling node model.github_firehose.pr_throughput
+[0m16:07:59.735206 [debug] [Thread-1 (]: Writing injected SQL for node "model.github_firehose.issue_activity"
+[0m16:07:59.738168 [debug] [Thread-2 (]: Writing injected SQL for node "model.github_firehose.pr_throughput"
+[0m16:07:59.738993 [debug] [Thread-2 (]: Began executing node model.github_firehose.pr_throughput
+[0m16:07:59.739355 [debug] [Thread-1 (]: Began executing node model.github_firehose.issue_activity
+[0m16:07:59.789285 [debug] [Thread-2 (]: Writing runtime sql for node "model.github_firehose.pr_throughput"
+[0m16:07:59.789870 [debug] [Thread-1 (]: Writing runtime sql for node "model.github_firehose.issue_activity"
+[0m16:07:59.790640 [debug] [Thread-1 (]: On model.github_firehose.issue_activity: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.issue_activity"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`issue_activity`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- issue_activity.sql
+-- Mart: issue activity per day, broken down by action (opened/closed/reopened).
+select
+    f.date_key,
+    f.action,
+    count(*) as issue_count
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+where f.event_type = 'IssuesEvent'
+group by 1, 2
+    );
+  
+[0m16:07:59.791012 [debug] [Thread-2 (]: On model.github_firehose.pr_throughput: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.pr_throughput"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`pr_throughput`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- pr_throughput.sql
+-- Mart: pull request activity per day, broken down by action (opened/closed/merged).
+-- Filter to PullRequestEvent only, then count per day + action.
+
+select
+    f.date_key,
+    f.action,                        -- opened / closed / reopened / etc.
+    count(*) as pr_count
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+where f.event_type = 'PullRequestEvent'   -- filter early to PRs only
+group by 1, 2
+    );
+  
+[0m16:07:59.791418 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:07:59.791727 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:08:00.770441 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:485d8954-cf8d-46f9-8a2c-fbde17f97d0b&page=queryresults
+[0m16:08:00.771749 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:52331830-65c1-4c82-8c35-0be2acb204d4&page=queryresults
+[0m16:08:02.625949 [debug] [Thread-2 (]: SQL status: OK in 1.848 seconds
+[0m16:08:02.949568 [debug] [Thread-1 (]: SQL status: OK in 2.175 seconds
+[0m16:08:03.144267 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1399408b0>]}
+[0m16:08:03.145191 [info ] [Thread-2 (]: 2 of 2 OK created sql table model github_firehose.pr_throughput ................ [[32mCREATE TABLE (3.0 rows, 59.8 MiB processed)[0m in 3.42s]
+[0m16:08:03.145852 [debug] [Thread-2 (]: Finished running node model.github_firehose.pr_throughput
+[0m16:08:03.237334 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '689c5f38-5ebd-47f1-af35-b47b4eaf1406', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c8d30>]}
+[0m16:08:03.238236 [info ] [Thread-1 (]: 1 of 2 OK created sql table model github_firehose.issue_activity ............... [[32mCREATE TABLE (3.0 rows, 59.8 MiB processed)[0m in 3.51s]
+[0m16:08:03.238914 [debug] [Thread-1 (]: Finished running node model.github_firehose.issue_activity
+[0m16:08:03.240278 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:08:03.241187 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:08:03.241579 [debug] [MainThread]: Connection 'model.github_firehose.issue_activity' was properly closed.
+[0m16:08:03.241906 [debug] [MainThread]: Connection 'model.github_firehose.pr_throughput' was properly closed.
+[0m16:08:03.242344 [info ] [MainThread]: 
+[0m16:08:03.242733 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 5.48 seconds (5.48s).
+[0m16:08:03.243779 [debug] [MainThread]: Command end result
+[0m16:08:03.278466 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:08:03.280423 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:08:03.285523 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m16:08:03.285755 [info ] [MainThread]: 
+[0m16:08:03.286013 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:08:03.286221 [info ] [MainThread]: 
+[0m16:08:03.286465 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m16:08:03.291446 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.239124, "process_in_blocks": "0", "process_kernel_time": 0.421466, "process_mem_max_rss": "213516288", "process_out_blocks": "0", "process_user_time": 1.985633}
+[0m16:08:03.291990 [debug] [MainThread]: Command `dbt run` succeeded at 16:08:03.291903 after 7.24 seconds
+[0m16:08:03.292591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b06770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f64a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13a4329b0>]}
+[0m16:08:03.292826 [debug] [MainThread]: Flushing usage events
+[0m16:08:04.088655 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:11:27.266334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057be7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10754d240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10754ce50>]}
+
+
+============================== 16:11:27.270179 | 4cfe9a83-f270-492f-9dfd-d9e26a692405 ==============================
+[0m16:11:27.270179 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:11:27.270595 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'no_print': 'None', 'write_json': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select events_by_type_per_day', 'use_colors': 'True', 'static_parser': 'True', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'introspect': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'version_check': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'printer_width': '80', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs'}
+[0m16:11:28.373638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10754d480>]}
+[0m16:11:28.406690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074f5fc0>]}
+[0m16:11:28.407148 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:11:28.553415 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:11:28.672585 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m16:11:28.672983 [debug] [MainThread]: Partial parsing: added file: github_firehose://models/marts/events_by_type_per_day.sql
+[0m16:11:28.831257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153ac8130>]}
+[0m16:11:28.935762 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:11:28.937258 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:11:28.944198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153ac6e90>]}
+[0m16:11:28.944497 [info ] [MainThread]: Found 5 models, 6 sources, 553 macros
+[0m16:11:28.944696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153ac5660>]}
+[0m16:11:28.945389 [info ] [MainThread]: 
+[0m16:11:28.945586 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:11:28.945752 [info ] [MainThread]: 
+[0m16:11:28.946025 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:11:28.946458 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero'
+[0m16:11:28.946673 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:30.590278 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_github-firehose-fumero, now list_github-firehose-fumero_github_firehose)
+[0m16:11:30.591439 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:11:31.256501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1538be770>]}
+[0m16:11:31.257645 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:11:31.260718 [debug] [Thread-1 (]: Began running node model.github_firehose.events_by_type_per_day
+[0m16:11:31.261329 [info ] [Thread-1 (]: 1 of 1 START sql table model github_firehose.events_by_type_per_day ............ [RUN]
+[0m16:11:31.261760 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now model.github_firehose.events_by_type_per_day)
+[0m16:11:31.262110 [debug] [Thread-1 (]: Began compiling node model.github_firehose.events_by_type_per_day
+[0m16:11:31.270775 [debug] [Thread-1 (]: Writing injected SQL for node "model.github_firehose.events_by_type_per_day"
+[0m16:11:31.271875 [debug] [Thread-1 (]: Began executing node model.github_firehose.events_by_type_per_day
+[0m16:11:31.308666 [debug] [Thread-1 (]: Writing runtime sql for node "model.github_firehose.events_by_type_per_day"
+[0m16:11:31.309518 [debug] [Thread-1 (]: On model.github_firehose.events_by_type_per_day: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.events_by_type_per_day"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`events_by_type_per_day`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- events_by_type_per_day.sql
+-- Mart: total events per day, broken down by event type (all 4 types).
+-- No dim join needed — date_key and event_type are both already on the fact.
+
+select
+    f.date_key,
+    f.event_type,
+    count(*) as event_count          -- one row per event → count per (day, type)
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+group by 1, 2                         -- group by the two non-aggregate columns
+    );
+  
+[0m16:11:31.309866 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:11:32.321275 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:357f5c8c-744c-4edc-9928-ae0bc526a4d0&page=queryresults
+[0m16:11:34.632401 [debug] [Thread-1 (]: SQL status: OK in 2.309 seconds
+[0m16:11:35.068696 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4cfe9a83-f270-492f-9dfd-d9e26a692405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10567cd90>]}
+[0m16:11:35.070856 [info ] [Thread-1 (]: 1 of 1 OK created sql table model github_firehose.events_by_type_per_day ....... [[32mCREATE TABLE (4.0 rows, 56.4 MiB processed)[0m in 3.80s]
+[0m16:11:35.080120 [debug] [Thread-1 (]: Finished running node model.github_firehose.events_by_type_per_day
+[0m16:11:35.083077 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:11:35.084581 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:11:35.085573 [debug] [MainThread]: Connection 'model.github_firehose.events_by_type_per_day' was properly closed.
+[0m16:11:35.085937 [info ] [MainThread]: 
+[0m16:11:35.086283 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.14 seconds (6.14s).
+[0m16:11:35.086761 [debug] [MainThread]: Command end result
+[0m16:11:35.129687 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:11:35.131470 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:11:35.135696 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m16:11:35.135953 [info ] [MainThread]: 
+[0m16:11:35.136203 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:11:35.136380 [info ] [MainThread]: 
+[0m16:11:35.136569 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:11:35.140468 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.932632, "process_in_blocks": "0", "process_kernel_time": 0.443816, "process_mem_max_rss": "219430912", "process_out_blocks": "0", "process_user_time": 2.021919}
+[0m16:11:35.140865 [debug] [MainThread]: Command `dbt run` succeeded at 16:11:35.140806 after 7.93 seconds
+[0m16:11:35.141123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057be7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153a5ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153a5fdc0>]}
+[0m16:11:35.141358 [debug] [MainThread]: Flushing usage events
+[0m16:11:35.845565 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:13:49.107479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106806800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110d49240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110d48e50>]}
+
+
+============================== 16:13:49.110503 | 04d10e98-68fb-4699-ba95-78d9d899bb8f ==============================
+[0m16:13:49.110503 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:13:49.110849 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'target_path': 'None', 'log_cache_events': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'warn_error': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'introspect': 'True', 'log_format': 'default', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'use_colors': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs'}
+[0m16:13:50.221186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '04d10e98-68fb-4699-ba95-78d9d899bb8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ac5930>]}
+[0m16:13:50.256659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '04d10e98-68fb-4699-ba95-78d9d899bb8f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104caa10>]}
+[0m16:13:50.257131 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:13:50.363213 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:13:50.453868 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m16:13:50.454309 [debug] [MainThread]: Partial parsing: added file: github_firehose://models/schema_tests.yml
+[0m16:13:50.509906 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "github_firehose_dim_actor".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("github_firehose", "dim_actor").
+  
+  To fix this, change the name of one of these resources:
+  - source.github_firehose.github_firehose.dim_actor (models/schema_tests.yml)
+  - source.github_firehose.github_firehose.dim_actor (models/sources.yml)
+[0m16:13:50.514235 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.4604652, "process_in_blocks": "0", "process_kernel_time": 0.324175, "process_mem_max_rss": "211140608", "process_out_blocks": "0", "process_user_time": 1.48176}
+[0m16:13:50.514590 [debug] [MainThread]: Command `dbt test` failed at 16:13:50.514530 after 1.46 seconds
+[0m16:13:50.514836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106806800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b2b3d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b2b3ee0>]}
+[0m16:13:50.515057 [debug] [MainThread]: Flushing usage events
+[0m16:13:53.988883 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:15:40.438045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105406800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107049240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107048e50>]}
+
+
+============================== 16:15:40.441277 | 610c19f7-57df-445f-81e8-669d2c80839a ==============================
+[0m16:15:40.441277 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:15:40.441634 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'version_check': 'True', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'fail_fast': 'False', 'no_print': 'None', 'target_path': 'None', 'empty': 'None', 'invocation_command': 'dbt test', 'use_colors': 'True', 'introspect': 'True', 'quiet': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'warn_error': 'None'}
+[0m16:15:41.579972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '610c19f7-57df-445f-81e8-669d2c80839a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103585930>]}
+[0m16:15:41.616347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '610c19f7-57df-445f-81e8-669d2c80839a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fcaa10>]}
+[0m16:15:41.616826 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:15:41.726308 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:15:41.817505 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m16:15:41.817977 [debug] [MainThread]: Partial parsing: added file: github_firehose://models/schema_tests.yml
+[0m16:15:41.872747 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "github_firehose_dim_actor".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("github_firehose", "dim_actor").
+  
+  To fix this, change the name of one of these resources:
+  - source.github_firehose.github_firehose.dim_actor (models/schema_tests.yml)
+  - source.github_firehose.github_firehose.dim_actor (models/sources.yml)
+[0m16:15:41.877009 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.494148, "process_in_blocks": "0", "process_kernel_time": 0.326471, "process_mem_max_rss": "216530944", "process_out_blocks": "0", "process_user_time": 1.487975}
+[0m16:15:41.877314 [debug] [MainThread]: Command `dbt test` failed at 16:15:41.877256 after 1.49 seconds
+[0m16:15:41.877551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105406800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129cb3fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129cb2aa0>]}
+[0m16:15:41.877772 [debug] [MainThread]: Flushing usage events
+[0m16:15:43.365410 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:17:28.482406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110406800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112049240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112048e50>]}
+
+
+============================== 16:17:28.485573 | c6cb58d3-3c2f-48a7-9663-d4df17fbbece ==============================
+[0m16:17:28.485573 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:17:28.485931 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'printer_width': '80', 'no_print': 'None', 'debug': 'False', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'log_cache_events': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_format': 'default', 'target_path': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test', 'warn_error': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True'}
+[0m16:17:29.550245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c6cb58d3-3c2f-48a7-9663-d4df17fbbece', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106745930>]}
+[0m16:17:29.583511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c6cb58d3-3c2f-48a7-9663-d4df17fbbece', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118caa10>]}
+[0m16:17:29.583919 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:17:29.688145 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:17:29.774935 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:17:29.775210 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:17:29.775373 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:17:29.797696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c6cb58d3-3c2f-48a7-9663-d4df17fbbece', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132e23dc0>]}
+[0m16:17:29.853154 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:17:29.854797 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:17:29.866641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c6cb58d3-3c2f-48a7-9663-d4df17fbbece', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132e13370>]}
+[0m16:17:29.866973 [info ] [MainThread]: Found 5 models, 6 sources, 553 macros
+[0m16:17:29.867178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c6cb58d3-3c2f-48a7-9663-d4df17fbbece', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ceacb0>]}
+[0m16:17:29.868009 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:17:29.869098 [debug] [MainThread]: Command end result
+[0m16:17:29.936243 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:17:29.937312 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:17:29.939170 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m16:17:29.943317 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.5122453, "process_in_blocks": "0", "process_kernel_time": 0.310361, "process_mem_max_rss": "214155264", "process_out_blocks": "0", "process_user_time": 1.563467}
+[0m16:17:29.943774 [debug] [MainThread]: Command `dbt test` succeeded at 16:17:29.943717 after 1.51 seconds
+[0m16:17:29.944022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110406800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132e97fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132e949a0>]}
+[0m16:17:29.944257 [debug] [MainThread]: Flushing usage events
+[0m16:17:30.890852 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:18:41.435278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039ae7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b611e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b60df0>]}
+
+
+============================== 16:18:41.438443 | 6a55eb24-9507-4865-95e6-b2fbcc06b5e6 ==============================
+[0m16:18:41.438443 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:18:41.438846 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'write_json': 'True', 'introspect': 'True', 'target_path': 'None', 'version_check': 'True', 'log_format': 'default', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'use_colors': 'True', 'no_print': 'None', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'invocation_command': 'dbt list --resource-type test', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'quiet': 'False', 'debug': 'False', 'empty': 'None', 'partial_parse': 'True'}
+[0m16:18:42.500071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a55eb24-9507-4865-95e6-b2fbcc06b5e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b61420>]}
+[0m16:18:42.533103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a55eb24-9507-4865-95e6-b2fbcc06b5e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b12fe0>]}
+[0m16:18:42.533493 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:18:42.636020 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:18:42.725145 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:18:42.725738 [debug] [MainThread]: Partial parsing: updated file: github_firehose://models/sources.yml
+[0m16:18:43.009804 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'github_firehose_fact_events' in package 'github_firehose' (models/sources.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m16:18:43.010187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6a55eb24-9507-4865-95e6-b2fbcc06b5e6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1254277c0>]}
+[0m16:18:43.074763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a55eb24-9507-4865-95e6-b2fbcc06b5e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12561b8e0>]}
+[0m16:18:43.138865 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:18:43.140508 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:18:43.152758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a55eb24-9507-4865-95e6-b2fbcc06b5e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b61a20>]}
+[0m16:18:43.153359 [info ] [MainThread]: github_firehose.source_not_null_github_firehose_dim_actor_actor_id
+[0m16:18:43.153574 [info ] [MainThread]: github_firehose.source_not_null_github_firehose_dim_org_org_id
+[0m16:18:43.153748 [info ] [MainThread]: github_firehose.source_not_null_github_firehose_dim_repo_repo_id
+[0m16:18:43.153915 [info ] [MainThread]: github_firehose.source_not_null_github_firehose_dim_time_date_key
+[0m16:18:43.154069 [info ] [MainThread]: github_firehose.source_not_null_github_firehose_fact_events_actor_id
+[0m16:18:43.154230 [info ] [MainThread]: github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_
+[0m16:18:43.154387 [info ] [MainThread]: github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_
+[0m16:18:43.154541 [info ] [MainThread]: github_firehose.source_unique_github_firehose_dim_actor_actor_id
+[0m16:18:43.154693 [info ] [MainThread]: github_firehose.source_unique_github_firehose_dim_org_org_id
+[0m16:18:43.154841 [info ] [MainThread]: github_firehose.source_unique_github_firehose_dim_repo_repo_id
+[0m16:18:43.154992 [info ] [MainThread]: github_firehose.source_unique_github_firehose_dim_time_date_key
+[0m16:18:43.155311 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:18:43.159407 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 1.7757902, "process_in_blocks": "0", "process_kernel_time": 0.317676, "process_mem_max_rss": "218906624", "process_out_blocks": "0", "process_user_time": 1.847876}
+[0m16:18:43.159799 [debug] [MainThread]: Command `dbt list` succeeded at 16:18:43.159735 after 1.78 seconds
+[0m16:18:43.160047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039ae7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125995540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b61ba0>]}
+[0m16:18:43.160279 [debug] [MainThread]: Flushing usage events
+[0m16:18:43.772627 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:18:46.740892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ad67d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088491e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108848df0>]}
+
+
+============================== 16:18:46.743238 | 88a517bc-e80e-4d7d-bd04-057fe5e4ed95 ==============================
+[0m16:18:46.743238 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:18:46.743587 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'partial_parse': 'True', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'write_json': 'True', 'introspect': 'True', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'target_path': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'empty': 'None', 'quiet': 'False'}
+[0m16:18:47.317325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88a517bc-e80e-4d7d-bd04-057fe5e4ed95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1292408e0>]}
+[0m16:18:47.351650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88a517bc-e80e-4d7d-bd04-057fe5e4ed95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108783580>]}
+[0m16:18:47.352149 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:18:47.454655 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m16:18:47.540101 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:18:47.540417 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:18:47.540597 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:18:47.571743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88a517bc-e80e-4d7d-bd04-057fe5e4ed95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129ad0fa0>]}
+[0m16:18:47.640592 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:18:47.641906 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:18:47.652308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88a517bc-e80e-4d7d-bd04-057fe5e4ed95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129a46860>]}
+[0m16:18:47.652645 [info ] [MainThread]: Found 5 models, 11 data tests, 6 sources, 553 macros
+[0m16:18:47.652860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88a517bc-e80e-4d7d-bd04-057fe5e4ed95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128bfdf30>]}
+[0m16:18:47.653968 [info ] [MainThread]: 
+[0m16:18:47.654174 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:18:47.654350 [info ] [MainThread]: 
+[0m16:18:47.654627 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:18:47.657265 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero_github_firehose'
+[0m16:18:47.657501 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:18:49.556438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88a517bc-e80e-4d7d-bd04-057fe5e4ed95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10513ae60>]}
+[0m16:18:49.557712 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:18:49.563466 [debug] [Thread-1 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m16:18:49.564137 [debug] [Thread-2 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m16:18:49.565153 [debug] [Thread-3 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m16:18:49.564686 [info ] [Thread-1 (]: 1 of 11 START test source_not_null_github_firehose_dim_actor_actor_id .......... [RUN]
+[0m16:18:49.565827 [debug] [Thread-4 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m16:18:49.566280 [info ] [Thread-2 (]: 2 of 11 START test source_not_null_github_firehose_dim_org_org_id .............. [RUN]
+[0m16:18:49.566829 [info ] [Thread-3 (]: 3 of 11 START test source_not_null_github_firehose_dim_repo_repo_id ............ [RUN]
+[0m16:18:49.567423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b)
+[0m16:18:49.567932 [info ] [Thread-4 (]: 4 of 11 START test source_not_null_github_firehose_dim_time_date_key ........... [RUN]
+[0m16:18:49.568546 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca'
+[0m16:18:49.569145 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8'
+[0m16:18:49.569616 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m16:18:49.570179 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c'
+[0m16:18:49.570641 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m16:18:49.571086 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m16:18:49.594955 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"
+[0m16:18:49.595432 [debug] [Thread-4 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m16:18:49.600516 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"
+[0m16:18:49.657136 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"
+[0m16:18:49.659859 [debug] [Thread-4 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"
+[0m16:18:49.660378 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m16:18:49.660620 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m16:18:49.672889 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"
+[0m16:18:49.673126 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m16:18:49.674776 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"
+[0m16:18:49.675020 [debug] [Thread-4 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m16:18:49.676696 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"
+[0m16:18:49.678894 [debug] [Thread-4 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"
+[0m16:18:49.679318 [debug] [Thread-1 (]: On test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:49.679573 [debug] [Thread-3 (]: On test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repo_id
+from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+where repo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:49.679877 [debug] [Thread-2 (]: On test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select org_id
+from `github-firehose-fumero`.`github_firehose`.`dim_org`
+where org_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:49.680141 [debug] [Thread-4 (]: On test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_key
+from `github-firehose-fumero`.`github_firehose`.`dim_time`
+where date_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:49.680419 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:18:49.680643 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:18:49.680861 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:18:49.681075 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:18:50.638130 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:770bf846-52c6-405e-b113-4a8bdf850d53&page=queryresults
+[0m16:18:50.656699 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:e384c84b-4045-42fc-9b22-cf7b5d88a279&page=queryresults
+[0m16:18:50.670950 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:cc38bd2a-b171-4716-8df9-5a94cfa6e39c&page=queryresults
+[0m16:18:50.699171 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:8beb2426-165c-4a91-a8f7-9beed7f83a33&page=queryresults
+[0m16:18:50.979355 [debug] [Thread-2 (]: SQL status: OK in 0.340 seconds
+[0m16:18:50.981393 [debug] [Thread-3 (]: SQL status: OK in 0.309 seconds
+[0m16:18:50.982678 [debug] [Thread-1 (]: SQL status: OK in 0.325 seconds
+[0m16:18:50.983611 [debug] [Thread-4 (]: SQL status: OK in 0.283 seconds
+[0m16:18:51.646335 [info ] [Thread-2 (]: 2 of 11 PASS source_not_null_github_firehose_dim_org_org_id .................... [[32mPASS[0m in 2.08s]
+[0m16:18:51.648842 [info ] [Thread-3 (]: 3 of 11 PASS source_not_null_github_firehose_dim_repo_repo_id .................. [[32mPASS[0m in 2.08s]
+[0m16:18:51.651063 [info ] [Thread-1 (]: 1 of 11 PASS source_not_null_github_firehose_dim_actor_actor_id ................ [[32mPASS[0m in 2.08s]
+[0m16:18:51.652360 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m16:18:51.653100 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m16:18:51.653793 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m16:18:51.654344 [debug] [Thread-2 (]: Began running node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m16:18:51.655030 [debug] [Thread-3 (]: Began running node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m16:18:51.655709 [debug] [Thread-1 (]: Began running node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m16:18:51.656320 [info ] [Thread-2 (]: 5 of 11 START test source_not_null_github_firehose_fact_events_actor_id ........ [RUN]
+[0m16:18:51.657055 [info ] [Thread-3 (]: 6 of 11 START test source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_  [RUN]
+[0m16:18:51.658249 [info ] [Thread-1 (]: 7 of 11 START test source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_  [RUN]
+[0m16:18:51.659250 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca, now test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5)
+[0m16:18:51.659852 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8, now test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364)
+[0m16:18:51.660451 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b, now test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5)
+[0m16:18:51.660951 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m16:18:51.661395 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m16:18:51.661803 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m16:18:51.667651 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"
+[0m16:18:51.678037 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"
+[0m16:18:51.683859 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"
+[0m16:18:51.684783 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m16:18:51.685171 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m16:18:51.685556 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m16:18:51.688267 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"
+[0m16:18:51.690678 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"
+[0m16:18:51.692899 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"
+[0m16:18:51.693567 [debug] [Thread-2 (]: On test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from `github-firehose-fumero`.`github_firehose`.`fact_events`
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:51.693945 [debug] [Thread-3 (]: On test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select actor_id as from_field
+    from `github-firehose-fumero`.`github_firehose`.`fact_events`
+    where actor_id is not null
+),
+
+parent as (
+    select actor_id as to_field
+    from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:51.694374 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:18:51.694753 [debug] [Thread-1 (]: On test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select repo_id as from_field
+    from `github-firehose-fumero`.`github_firehose`.`fact_events`
+    where repo_id is not null
+),
+
+parent as (
+    select repo_id as to_field
+    from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:51.695060 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m16:18:51.696236 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:18:51.751550 [info ] [Thread-4 (]: 4 of 11 PASS source_not_null_github_firehose_dim_time_date_key ................. [[32mPASS[0m in 2.18s]
+[0m16:18:51.752236 [debug] [Thread-4 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m16:18:51.752657 [debug] [Thread-4 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m16:18:51.753102 [info ] [Thread-4 (]: 8 of 11 START test source_unique_github_firehose_dim_actor_actor_id ............ [RUN]
+[0m16:18:51.753563 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c, now test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593)
+[0m16:18:51.753903 [debug] [Thread-4 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m16:18:51.760763 [debug] [Thread-4 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"
+[0m16:18:51.761722 [debug] [Thread-4 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m16:18:51.764505 [debug] [Thread-4 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"
+[0m16:18:51.765454 [debug] [Thread-4 (]: On test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select actor_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+  where actor_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:51.765849 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m16:18:52.763394 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:d08052b3-f905-4145-854c-c1d4d9fb06ba&page=queryresults
+[0m16:18:52.785371 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:b913ea95-3c4f-48eb-b595-3ca05dfbe76a&page=queryresults
+[0m16:18:52.836709 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:8d6ce3f8-074a-493d-9fd4-1d44b39621e6&page=queryresults
+[0m16:18:52.933216 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:b2b71669-03dc-4a52-9581-99fefd358279&page=queryresults
+[0m16:18:52.975802 [debug] [Thread-2 (]: SQL status: OK in 0.210 seconds
+[0m16:18:53.082810 [debug] [Thread-3 (]: SQL status: OK in 0.296 seconds
+[0m16:18:53.130614 [debug] [Thread-1 (]: SQL status: OK in 0.292 seconds
+[0m16:18:53.228115 [debug] [Thread-4 (]: SQL status: OK in 0.293 seconds
+[0m16:18:53.567489 [info ] [Thread-2 (]: 5 of 11 PASS source_not_null_github_firehose_fact_events_actor_id .............. [[32mPASS[0m in 1.91s]
+[0m16:18:53.568403 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m16:18:53.568867 [debug] [Thread-2 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m16:18:53.569934 [info ] [Thread-2 (]: 9 of 11 START test source_unique_github_firehose_dim_org_org_id ................ [RUN]
+[0m16:18:53.572254 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5, now test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0)
+[0m16:18:53.572698 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m16:18:53.580703 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"
+[0m16:18:53.581786 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m16:18:53.584387 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"
+[0m16:18:53.585055 [debug] [Thread-2 (]: On test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select org_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_org`
+  where org_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:53.585444 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:18:53.754186 [info ] [Thread-1 (]: 7 of 11 PASS source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_  [[32mPASS[0m in 2.09s]
+[0m16:18:53.757946 [info ] [Thread-3 (]: 6 of 11 PASS source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_  [[32mPASS[0m in 2.10s]
+[0m16:18:53.759296 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m16:18:53.760479 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m16:18:53.761299 [debug] [Thread-1 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m16:18:53.762200 [debug] [Thread-3 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m16:18:53.763017 [info ] [Thread-1 (]: 10 of 11 START test source_unique_github_firehose_dim_repo_repo_id ............. [RUN]
+[0m16:18:53.763598 [info ] [Thread-3 (]: 11 of 11 START test source_unique_github_firehose_dim_time_date_key ............ [RUN]
+[0m16:18:53.764274 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5, now test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4)
+[0m16:18:53.764874 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364, now test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21)
+[0m16:18:53.765818 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m16:18:53.766704 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m16:18:53.773229 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"
+[0m16:18:53.778525 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"
+[0m16:18:53.779532 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m16:18:53.780017 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m16:18:53.785236 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"
+[0m16:18:53.789521 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"
+[0m16:18:53.791034 [info ] [Thread-4 (]: 8 of 11 PASS source_unique_github_firehose_dim_actor_actor_id .................. [[32mPASS[0m in 2.04s]
+[0m16:18:53.791923 [debug] [Thread-4 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m16:18:53.792631 [debug] [Thread-1 (]: On test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select repo_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+  where repo_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:53.793121 [debug] [Thread-3 (]: On test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select date_key as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_time`
+  where date_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:18:53.793596 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:18:53.793992 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m16:18:54.670144 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:32850f7d-0e2d-426b-9df6-0678e42fa7f6&page=queryresults
+[0m16:18:54.778638 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:db881d93-fcca-4e47-845f-2d5088d43d31&page=queryresults
+[0m16:18:54.955334 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:fcc740cf-1f15-4d2a-a786-e6823f03193d&page=queryresults
+[0m16:18:54.965722 [debug] [Thread-2 (]: SQL status: OK in 0.294 seconds
+[0m16:18:55.046198 [debug] [Thread-3 (]: SQL status: OK in 0.266 seconds
+[0m16:18:55.227193 [debug] [Thread-1 (]: SQL status: OK in 0.270 seconds
+[0m16:18:55.559361 [info ] [Thread-2 (]: 9 of 11 PASS source_unique_github_firehose_dim_org_org_id ...................... [[32mPASS[0m in 1.99s]
+[0m16:18:55.560681 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m16:18:55.617235 [info ] [Thread-3 (]: 11 of 11 PASS source_unique_github_firehose_dim_time_date_key .................. [[32mPASS[0m in 1.85s]
+[0m16:18:55.618377 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m16:18:55.828987 [info ] [Thread-1 (]: 10 of 11 PASS source_unique_github_firehose_dim_repo_repo_id ................... [[32mPASS[0m in 2.06s]
+[0m16:18:55.829714 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m16:18:55.830789 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:18:55.831398 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:18:55.831693 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4' was properly closed.
+[0m16:18:55.831949 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0' was properly closed.
+[0m16:18:55.832202 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21' was properly closed.
+[0m16:18:55.832450 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593' was properly closed.
+[0m16:18:55.832760 [info ] [MainThread]: 
+[0m16:18:55.833051 [info ] [MainThread]: Finished running 11 data tests in 0 hours 0 minutes and 8.18 seconds (8.18s).
+[0m16:18:55.834726 [debug] [MainThread]: Command end result
+[0m16:18:55.865136 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m16:18:55.866520 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m16:18:55.871797 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m16:18:55.872024 [info ] [MainThread]: 
+[0m16:18:55.872279 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:18:55.872477 [info ] [MainThread]: 
+[0m16:18:55.872696 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m16:18:55.876341 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 9.177488, "process_in_blocks": "0", "process_kernel_time": 0.350713, "process_mem_max_rss": "218169344", "process_out_blocks": "0", "process_user_time": 2.213192}
+[0m16:18:55.876665 [debug] [MainThread]: Command `dbt test` succeeded at 16:18:55.876606 after 9.18 seconds
+[0m16:18:55.876915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ad67d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ec3f910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ec3fc40>]}
+[0m16:18:55.877157 [debug] [MainThread]: Flushing usage events
+[0m16:18:56.689849 [debug] [MainThread]: An error was encountered while trying to flush usage events
