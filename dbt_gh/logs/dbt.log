@@ -1957,3 +1957,1318 @@ having count(*) > 1
 [0m11:46:39.912043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c06860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058bc2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1025919c0>]}
 [0m11:46:39.912314 [debug] [MainThread]: Flushing usage events
 [0m11:46:40.359934 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:37:27.027464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f7e890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa49240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa48e50>]}
+
+
+============================== 14:37:27.030539 | 66d60c21-4e14-4ab0-b14a-dff984f8543f ==============================
+[0m14:37:27.030539 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:37:27.030903 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'use_colors': 'True', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'no_print': 'None', 'invocation_command': 'dbt test', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'introspect': 'True', 'target_path': 'None', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'use_experimental_parser': 'False', 'write_json': 'True', 'warn_error': 'None', 'printer_width': '80'}
+[0m14:37:28.641717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '66d60c21-4e14-4ab0-b14a-dff984f8543f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063f9a20>]}
+[0m14:37:28.675416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '66d60c21-4e14-4ab0-b14a-dff984f8543f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109861570>]}
+[0m14:37:28.675888 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m14:37:28.821480 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:37:28.944312 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:37:28.944595 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:37:28.944769 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:37:28.977451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '66d60c21-4e14-4ab0-b14a-dff984f8543f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c3d1060>]}
+[0m14:37:29.051416 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m14:37:29.053321 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m14:37:29.069264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '66d60c21-4e14-4ab0-b14a-dff984f8543f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c345990>]}
+[0m14:37:29.069712 [info ] [MainThread]: Found 5 models, 11 data tests, 6 sources, 553 macros
+[0m14:37:29.069943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '66d60c21-4e14-4ab0-b14a-dff984f8543f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129cfdff0>]}
+[0m14:37:29.071133 [info ] [MainThread]: 
+[0m14:37:29.071345 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:37:29.071520 [info ] [MainThread]: 
+[0m14:37:29.071820 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:37:29.074511 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero_github_firehose'
+[0m14:37:29.074763 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:37:31.663454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '66d60c21-4e14-4ab0-b14a-dff984f8543f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcb20b0>]}
+[0m14:37:31.665229 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:37:31.670807 [debug] [Thread-1 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:37:31.671418 [debug] [Thread-2 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:37:31.672598 [debug] [Thread-3 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:37:31.671974 [info ] [Thread-1 (]: 1 of 11 START test source_not_null_github_firehose_dim_actor_actor_id .......... [RUN]
+[0m14:37:31.673281 [debug] [Thread-4 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:37:31.673840 [info ] [Thread-2 (]: 2 of 11 START test source_not_null_github_firehose_dim_org_org_id .............. [RUN]
+[0m14:37:31.674379 [info ] [Thread-3 (]: 3 of 11 START test source_not_null_github_firehose_dim_repo_repo_id ............ [RUN]
+[0m14:37:31.675029 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b)
+[0m14:37:31.675470 [info ] [Thread-4 (]: 4 of 11 START test source_not_null_github_firehose_dim_time_date_key ........... [RUN]
+[0m14:37:31.676005 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca'
+[0m14:37:31.676500 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8'
+[0m14:37:31.676921 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:37:31.677406 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c'
+[0m14:37:31.677790 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:37:31.678210 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:37:31.702085 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"
+[0m14:37:31.702561 [debug] [Thread-4 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:37:31.708017 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"
+[0m14:37:31.786505 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"
+[0m14:37:31.789188 [debug] [Thread-4 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"
+[0m14:37:31.789703 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:37:31.797005 [debug] [Thread-4 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:37:31.802688 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:37:31.810609 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"
+[0m14:37:31.811518 [debug] [Thread-4 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"
+[0m14:37:31.811730 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:37:31.813966 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"
+[0m14:37:31.815778 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"
+[0m14:37:31.816221 [debug] [Thread-1 (]: On test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:31.816477 [debug] [Thread-4 (]: On test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_key
+from `github-firehose-fumero`.`github_firehose`.`dim_time`
+where date_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:31.816759 [debug] [Thread-2 (]: On test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select org_id
+from `github-firehose-fumero`.`github_firehose`.`dim_org`
+where org_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:31.817011 [debug] [Thread-3 (]: On test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repo_id
+from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+where repo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:31.817277 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:37:31.817518 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:37:31.817738 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:37:31.817949 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:37:32.708546 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:1f529dc7-13ee-4d49-ad51-317adac3ef1d&page=queryresults
+[0m14:37:32.734597 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:9a0ac3ad-ab42-4026-a511-596ae7fa868d&page=queryresults
+[0m14:37:32.843348 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:740480c4-16f6-481f-921c-a204b278e5b3&page=queryresults
+[0m14:37:32.849544 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:6b170bdf-8651-4e74-97c9-759faf3fcc9b&page=queryresults
+[0m14:37:33.052932 [debug] [Thread-3 (]: SQL status: OK in 0.341 seconds
+[0m14:37:33.152171 [debug] [Thread-1 (]: SQL status: OK in 0.416 seconds
+[0m14:37:33.155277 [debug] [Thread-2 (]: SQL status: OK in 0.311 seconds
+[0m14:37:33.190612 [debug] [Thread-4 (]: SQL status: OK in 0.340 seconds
+[0m14:37:33.691644 [info ] [Thread-3 (]: 3 of 11 PASS source_not_null_github_firehose_dim_repo_repo_id .................. [[32mPASS[0m in 2.02s]
+[0m14:37:33.692653 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:37:33.693226 [debug] [Thread-3 (]: Began running node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:37:33.693737 [info ] [Thread-3 (]: 5 of 11 START test source_not_null_github_firehose_fact_events_actor_id ........ [RUN]
+[0m14:37:33.694314 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8, now test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5)
+[0m14:37:33.694821 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:37:33.700970 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"
+[0m14:37:33.703397 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:37:33.707809 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"
+[0m14:37:33.708895 [debug] [Thread-3 (]: On test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from `github-firehose-fumero`.`github_firehose`.`fact_events`
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:33.709367 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:37:33.802974 [info ] [Thread-4 (]: 4 of 11 PASS source_not_null_github_firehose_dim_time_date_key ................. [[32mPASS[0m in 2.13s]
+[0m14:37:33.807543 [info ] [Thread-2 (]: 2 of 11 PASS source_not_null_github_firehose_dim_org_org_id .................... [[32mPASS[0m in 2.13s]
+[0m14:37:33.808337 [debug] [Thread-4 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:37:33.809122 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:37:33.809710 [debug] [Thread-4 (]: Began running node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:37:33.810323 [debug] [Thread-2 (]: Began running node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:37:33.810867 [info ] [Thread-4 (]: 6 of 11 START test source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_  [RUN]
+[0m14:37:33.811655 [info ] [Thread-2 (]: 7 of 11 START test source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_  [RUN]
+[0m14:37:33.812319 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c, now test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364)
+[0m14:37:33.812796 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca, now test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5)
+[0m14:37:33.813273 [debug] [Thread-4 (]: Began compiling node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:37:33.813701 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:37:33.824331 [debug] [Thread-4 (]: Writing injected SQL for node "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"
+[0m14:37:33.831359 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"
+[0m14:37:33.832868 [info ] [Thread-1 (]: 1 of 11 PASS source_not_null_github_firehose_dim_actor_actor_id ................ [[32mPASS[0m in 2.16s]
+[0m14:37:33.833683 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:37:33.834103 [debug] [Thread-1 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:37:33.834895 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:37:33.834559 [info ] [Thread-1 (]: 8 of 11 START test source_unique_github_firehose_dim_actor_actor_id ............ [RUN]
+[0m14:37:33.835307 [debug] [Thread-4 (]: Began executing node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:37:33.838105 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"
+[0m14:37:33.838466 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b, now test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593)
+[0m14:37:33.841264 [debug] [Thread-4 (]: Writing runtime sql for node "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"
+[0m14:37:33.841769 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:37:33.846949 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"
+[0m14:37:33.847332 [debug] [Thread-2 (]: On test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select repo_id as from_field
+    from `github-firehose-fumero`.`github_firehose`.`fact_events`
+    where repo_id is not null
+),
+
+parent as (
+    select repo_id as to_field
+    from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:33.847838 [debug] [Thread-4 (]: On test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select actor_id as from_field
+    from `github-firehose-fumero`.`github_firehose`.`fact_events`
+    where actor_id is not null
+),
+
+parent as (
+    select actor_id as to_field
+    from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:33.848153 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:37:33.848455 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:37:33.848719 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:37:33.853321 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"
+[0m14:37:33.854165 [debug] [Thread-1 (]: On test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select actor_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+  where actor_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:33.854469 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:37:34.697680 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:4233b36c-08b1-4fdc-86ac-c7e379703f2e&page=queryresults
+[0m14:37:34.746677 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:657277a3-c824-4c1b-a603-2100602c6d22&page=queryresults
+[0m14:37:34.765047 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:6c422b61-51bd-4a9a-a8a1-2775abff6e5e&page=queryresults
+[0m14:37:35.011688 [debug] [Thread-3 (]: SQL status: OK in 0.312 seconds
+[0m14:37:35.036566 [debug] [Thread-1 (]: SQL status: OK in 0.288 seconds
+[0m14:37:35.134714 [debug] [Thread-2 (]: SQL status: OK in 0.369 seconds
+[0m14:37:35.358927 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:cbcefd23-aeb5-474b-83dc-063de3482cdb&page=queryresults
+[0m14:37:35.651661 [debug] [Thread-4 (]: SQL status: OK in 0.292 seconds
+[0m14:37:35.670020 [info ] [Thread-1 (]: 8 of 11 PASS source_unique_github_firehose_dim_actor_actor_id .................. [[32mPASS[0m in 1.83s]
+[0m14:37:35.671260 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:37:35.671981 [debug] [Thread-1 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:37:35.672879 [info ] [Thread-1 (]: 9 of 11 START test source_unique_github_firehose_dim_org_org_id ................ [RUN]
+[0m14:37:35.673751 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593, now test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0)
+[0m14:37:35.674406 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:37:35.683346 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"
+[0m14:37:35.684544 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:37:35.689275 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"
+[0m14:37:35.690526 [debug] [Thread-1 (]: On test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select org_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_org`
+  where org_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:35.691143 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:37:35.898976 [info ] [Thread-3 (]: 5 of 11 PASS source_not_null_github_firehose_fact_events_actor_id .............. [[32mPASS[0m in 2.20s]
+[0m14:37:35.900411 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:37:35.901158 [debug] [Thread-3 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:37:35.901935 [info ] [Thread-3 (]: 10 of 11 START test source_unique_github_firehose_dim_repo_repo_id ............. [RUN]
+[0m14:37:35.902726 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5, now test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4)
+[0m14:37:35.903363 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:37:35.911759 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"
+[0m14:37:35.912811 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:37:35.916923 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"
+[0m14:37:35.917815 [debug] [Thread-3 (]: On test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select repo_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+  where repo_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:35.918427 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:37:35.939795 [info ] [Thread-2 (]: 7 of 11 PASS source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_  [[32mPASS[0m in 2.13s]
+[0m14:37:35.940691 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:37:35.941239 [debug] [Thread-2 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:37:35.941830 [info ] [Thread-2 (]: 11 of 11 START test source_unique_github_firehose_dim_time_date_key ............ [RUN]
+[0m14:37:35.942419 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5, now test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21)
+[0m14:37:35.942877 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:37:35.948886 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"
+[0m14:37:35.950140 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:37:35.953656 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"
+[0m14:37:35.954481 [debug] [Thread-2 (]: On test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select date_key as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_time`
+  where date_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:37:35.954957 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:37:36.224628 [info ] [Thread-4 (]: 6 of 11 PASS source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_  [[32mPASS[0m in 2.41s]
+[0m14:37:36.226057 [debug] [Thread-4 (]: Finished running node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:37:36.524038 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:471c5600-8ec1-47f0-b656-a7308fc9879d&page=queryresults
+[0m14:37:36.831223 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:9ce2caf4-7b28-452e-8e42-ec454c5c4be8&page=queryresults
+[0m14:37:36.836979 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:beca6638-fffc-4cd8-9a31-7e786817fb0d&page=queryresults
+[0m14:37:36.853828 [debug] [Thread-1 (]: SQL status: OK in 0.328 seconds
+[0m14:37:37.241175 [debug] [Thread-3 (]: SQL status: OK in 0.408 seconds
+[0m14:37:37.242461 [debug] [Thread-2 (]: SQL status: OK in 0.404 seconds
+[0m14:37:37.557789 [info ] [Thread-1 (]: 9 of 11 PASS source_unique_github_firehose_dim_org_org_id ...................... [[32mPASS[0m in 1.88s]
+[0m14:37:37.559002 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:37:37.824471 [info ] [Thread-2 (]: 11 of 11 PASS source_unique_github_firehose_dim_time_date_key .................. [[32mPASS[0m in 1.88s]
+[0m14:37:37.828377 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:37:37.830918 [info ] [Thread-3 (]: 10 of 11 PASS source_unique_github_firehose_dim_repo_repo_id ................... [[32mPASS[0m in 1.93s]
+[0m14:37:37.832436 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:37:37.834632 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:37:37.835655 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:37:37.836583 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0' was properly closed.
+[0m14:37:37.837247 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21' was properly closed.
+[0m14:37:37.837727 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4' was properly closed.
+[0m14:37:37.838122 [debug] [MainThread]: Connection 'test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364' was properly closed.
+[0m14:37:37.838615 [info ] [MainThread]: 
+[0m14:37:37.839072 [info ] [MainThread]: Finished running 11 data tests in 0 hours 0 minutes and 8.77 seconds (8.77s).
+[0m14:37:37.841713 [debug] [MainThread]: Command end result
+[0m14:37:37.885267 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m14:37:37.887046 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m14:37:37.894034 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m14:37:37.894309 [info ] [MainThread]: 
+[0m14:37:37.894604 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:37:37.894833 [info ] [MainThread]: 
+[0m14:37:37.895086 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m14:37:37.938641 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 10.968211, "process_in_blocks": "0", "process_kernel_time": 0.567342, "process_mem_max_rss": "211091456", "process_out_blocks": "0", "process_user_time": 2.340427}
+[0m14:37:37.939163 [debug] [MainThread]: Command `dbt test` succeeded at 14:37:37.939086 after 10.97 seconds
+[0m14:37:37.939562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f7e890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109861570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c3472b0>]}
+[0m14:37:37.939889 [debug] [MainThread]: Flushing usage events
+[0m14:37:38.998028 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:55:16.312939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a6a800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c6d1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c6cdc0>]}
+
+
+============================== 14:55:16.316135 | 86b8c115-720f-401b-b47e-9e9d78b409c4 ==============================
+[0m14:55:16.316135 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:55:16.316482 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'static_parser': 'True', 'warn_error': 'None', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'empty': 'False', 'invocation_command': 'dbt run', 'log_format': 'default', 'printer_width': '80', 'use_colors': 'True', 'partial_parse': 'True', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh'}
+[0m14:55:17.381034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044800a0>]}
+[0m14:55:17.414917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c15fc0>]}
+[0m14:55:17.415359 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m14:55:17.518405 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:55:17.618842 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:55:17.619125 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:55:17.619295 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:55:17.651048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f3d0e50>]}
+[0m14:55:17.720010 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m14:55:17.721828 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m14:55:17.729477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f45c820>]}
+[0m14:55:17.729812 [info ] [MainThread]: Found 5 models, 11 data tests, 6 sources, 553 macros
+[0m14:55:17.730023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f45cc40>]}
+[0m14:55:17.731105 [info ] [MainThread]: 
+[0m14:55:17.731327 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:55:17.731498 [info ] [MainThread]: 
+[0m14:55:17.731794 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:55:17.734504 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero'
+[0m14:55:17.734770 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:20.257359 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_github-firehose-fumero, now list_github-firehose-fumero_github_firehose)
+[0m14:55:20.258497 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:21.121546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101ffed40>]}
+[0m14:55:21.122691 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:21.127840 [debug] [Thread-1 (]: Began running node model.github_firehose.events_by_type_per_day
+[0m14:55:21.128590 [debug] [Thread-2 (]: Began running node model.github_firehose.events_per_repo_per_day
+[0m14:55:21.129289 [debug] [Thread-3 (]: Began running node model.github_firehose.issue_activity
+[0m14:55:21.130916 [debug] [Thread-4 (]: Began running node model.github_firehose.pr_throughput
+[0m14:55:21.130379 [info ] [Thread-1 (]: 1 of 5 START sql table model github_firehose.events_by_type_per_day ............ [RUN]
+[0m14:55:21.131884 [info ] [Thread-2 (]: 2 of 5 START sql table model github_firehose.events_per_repo_per_day ........... [RUN]
+[0m14:55:21.132551 [info ] [Thread-3 (]: 3 of 5 START sql table model github_firehose.issue_activity .................... [RUN]
+[0m14:55:21.133181 [info ] [Thread-4 (]: 4 of 5 START sql table model github_firehose.pr_throughput ..................... [RUN]
+[0m14:55:21.133778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now model.github_firehose.events_by_type_per_day)
+[0m14:55:21.134409 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.github_firehose.events_per_repo_per_day'
+[0m14:55:21.134976 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.github_firehose.issue_activity'
+[0m14:55:21.135541 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.github_firehose.pr_throughput'
+[0m14:55:21.136073 [debug] [Thread-1 (]: Began compiling node model.github_firehose.events_by_type_per_day
+[0m14:55:21.136711 [debug] [Thread-2 (]: Began compiling node model.github_firehose.events_per_repo_per_day
+[0m14:55:21.137171 [debug] [Thread-3 (]: Began compiling node model.github_firehose.issue_activity
+[0m14:55:21.137606 [debug] [Thread-4 (]: Began compiling node model.github_firehose.pr_throughput
+[0m14:55:21.152886 [debug] [Thread-1 (]: Writing injected SQL for node "model.github_firehose.events_by_type_per_day"
+[0m14:55:21.156716 [debug] [Thread-2 (]: Writing injected SQL for node "model.github_firehose.events_per_repo_per_day"
+[0m14:55:21.159786 [debug] [Thread-3 (]: Writing injected SQL for node "model.github_firehose.issue_activity"
+[0m14:55:21.162807 [debug] [Thread-4 (]: Writing injected SQL for node "model.github_firehose.pr_throughput"
+[0m14:55:21.164013 [debug] [Thread-1 (]: Began executing node model.github_firehose.events_by_type_per_day
+[0m14:55:21.164357 [debug] [Thread-2 (]: Began executing node model.github_firehose.events_per_repo_per_day
+[0m14:55:21.171059 [debug] [Thread-4 (]: Began executing node model.github_firehose.pr_throughput
+[0m14:55:21.223283 [debug] [Thread-3 (]: Began executing node model.github_firehose.issue_activity
+[0m14:55:21.228207 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:21.229855 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:55:21.231536 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:55:21.233206 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:55:22.161506 [debug] [Thread-1 (]: Writing runtime sql for node "model.github_firehose.events_by_type_per_day"
+[0m14:55:22.164667 [debug] [Thread-2 (]: Writing runtime sql for node "model.github_firehose.events_per_repo_per_day"
+[0m14:55:22.165131 [debug] [Thread-3 (]: Writing runtime sql for node "model.github_firehose.issue_activity"
+[0m14:55:22.165420 [debug] [Thread-4 (]: Writing runtime sql for node "model.github_firehose.pr_throughput"
+[0m14:55:22.167149 [debug] [Thread-2 (]: On model.github_firehose.events_per_repo_per_day: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.events_per_repo_per_day"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`events_per_repo_per_day`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- events_per_repo_per_day.sql
+-- Mart: how many events each repo had, per day, by type.
+-- Joins the fact to dim_repo for the readable repo name.
+
+select
+    f.date_key,
+    f.repo_id,
+    r.repo_name,
+    r.repo_owner,
+    f.event_type,
+    count(*) as event_count          -- one row per event → count them
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+left join `github-firehose-fumero`.`github_firehose`.`dim_repo` r
+    on f.repo_id = r.repo_id
+group by 1, 2, 3, 4, 5               -- group by everything that isn't the aggregate
+    );
+  
+[0m14:55:22.167512 [debug] [Thread-1 (]: On model.github_firehose.events_by_type_per_day: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.events_by_type_per_day"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`events_by_type_per_day`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- events_by_type_per_day.sql
+-- Mart: total events per day, broken down by event type (all 4 types).
+-- No dim join needed — date_key and event_type are both already on the fact.
+
+select
+    f.date_key,
+    f.event_type,
+    count(*) as event_count          -- one row per event → count per (day, type)
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+group by 1, 2                         -- group by the two non-aggregate columns
+    );
+  
+[0m14:55:22.167805 [debug] [Thread-4 (]: On model.github_firehose.pr_throughput: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.pr_throughput"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`pr_throughput`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- pr_throughput.sql
+-- Mart: pull request activity per day, broken down by action (opened/closed/merged).
+-- Filter to PullRequestEvent only, then count per day + action.
+
+select
+    f.date_key,
+    f.action,                        -- opened / closed / reopened / etc.
+    count(*) as pr_count
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+where f.event_type = 'PullRequestEvent'   -- filter early to PRs only
+group by 1, 2
+    );
+  
+[0m14:55:22.168068 [debug] [Thread-3 (]: On model.github_firehose.issue_activity: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.issue_activity"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`issue_activity`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- issue_activity.sql
+-- Mart: issue activity per day, broken down by action (opened/closed/reopened).
+select
+    f.date_key,
+    f.action,
+    count(*) as issue_count
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+where f.event_type = 'IssuesEvent'
+group by 1, 2
+    );
+  
+[0m14:55:23.069967 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:fc3427a7-e73c-4a80-89ab-f044caee5807&page=queryresults
+[0m14:55:23.073568 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:6a902e89-6a22-4d4e-919d-2d19678bce83&page=queryresults
+[0m14:55:23.075526 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:80acb72f-fbbf-49ed-80be-25f12b8c5dc0&page=queryresults
+[0m14:55:23.373679 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:f38415f2-7476-4538-8ab5-beb85b45bedb&page=queryresults
+[0m14:55:25.273031 [debug] [Thread-4 (]: SQL status: OK in 2.194 seconds
+[0m14:55:26.236842 [debug] [Thread-3 (]: SQL status: OK in 2.862 seconds
+[0m14:55:26.241493 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11eb408e0>]}
+[0m14:55:26.242041 [info ] [Thread-4 (]: 4 of 5 OK created sql table model github_firehose.pr_throughput ................ [[32mCREATE TABLE (3.0 rows, 59.8 MiB processed)[0m in 5.10s]
+[0m14:55:26.242846 [debug] [Thread-4 (]: Finished running node model.github_firehose.pr_throughput
+[0m14:55:26.243201 [debug] [Thread-4 (]: Began running node model.github_firehose.top_contributors
+[0m14:55:26.243587 [info ] [Thread-4 (]: 5 of 5 START sql table model github_firehose.top_contributors .................. [RUN]
+[0m14:55:26.243913 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.github_firehose.pr_throughput, now model.github_firehose.top_contributors)
+[0m14:55:26.244142 [debug] [Thread-4 (]: Began compiling node model.github_firehose.top_contributors
+[0m14:55:26.246738 [debug] [Thread-4 (]: Writing injected SQL for node "model.github_firehose.top_contributors"
+[0m14:55:26.247408 [debug] [Thread-4 (]: Began executing node model.github_firehose.top_contributors
+[0m14:55:26.249423 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:55:26.673916 [debug] [Thread-1 (]: SQL status: OK in 3.595 seconds
+[0m14:55:26.706007 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ec45120>]}
+[0m14:55:26.707072 [info ] [Thread-3 (]: 3 of 5 OK created sql table model github_firehose.issue_activity ............... [[32mCREATE TABLE (3.0 rows, 59.8 MiB processed)[0m in 5.57s]
+[0m14:55:26.707544 [debug] [Thread-3 (]: Finished running node model.github_firehose.issue_activity
+[0m14:55:27.100540 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101f4a770>]}
+[0m14:55:27.101326 [info ] [Thread-1 (]: 1 of 5 OK created sql table model github_firehose.events_by_type_per_day ....... [[32mCREATE TABLE (4.0 rows, 56.4 MiB processed)[0m in 5.97s]
+[0m14:55:27.101914 [debug] [Thread-1 (]: Finished running node model.github_firehose.events_by_type_per_day
+[0m14:55:27.307967 [debug] [Thread-4 (]: Writing runtime sql for node "model.github_firehose.top_contributors"
+[0m14:55:27.309073 [debug] [Thread-4 (]: On model.github_firehose.top_contributors: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "model.github_firehose.top_contributors"} */
+
+  
+    
+
+    create or replace table `github-firehose-fumero`.`github_firehose`.`top_contributors`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- top_contributors.sql
+-- Mart: which actors created the most events.
+-- Fact (events) joined to dim_actor for the readable login.
+
+select
+    f.actor_id,
+    a.actor_login,
+    count(*) as event_count          -- one row per event → count per actor
+from `github-firehose-fumero`.`github_firehose`.`fact_events` f
+left join `github-firehose-fumero`.`github_firehose`.`dim_actor` a
+    on f.actor_id = a.actor_id
+group by 1, 2                         -- group by the non-aggregate columns (actor_id, actor_login)
+    );
+  
+[0m14:55:28.097703 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:553458c1-4ff9-44a9-a415-c00871a2aca5&page=queryresults
+[0m14:55:29.010352 [debug] [Thread-2 (]: SQL status: OK in 5.936 seconds
+[0m14:55:29.368738 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ed7d960>]}
+[0m14:55:29.375885 [info ] [Thread-2 (]: 2 of 5 OK created sql table model github_firehose.events_per_repo_per_day ...... [[32mCREATE TABLE (667.8k rows, 106.3 MiB processed)[0m in 8.23s]
+[0m14:55:29.381036 [debug] [Thread-2 (]: Finished running node model.github_firehose.events_per_repo_per_day
+[0m14:55:34.643697 [debug] [Thread-4 (]: SQL status: OK in 6.544 seconds
+[0m14:55:34.977041 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86b8c115-720f-401b-b47e-9e9d78b409c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103928dc0>]}
+[0m14:55:34.977987 [info ] [Thread-4 (]: 5 of 5 OK created sql table model github_firehose.top_contributors ............. [[32mCREATE TABLE (418.1k rows, 31.0 MiB processed)[0m in 8.73s]
+[0m14:55:34.978482 [debug] [Thread-4 (]: Finished running node model.github_firehose.top_contributors
+[0m14:55:34.980474 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:55:34.981413 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:55:34.981725 [debug] [MainThread]: Connection 'model.github_firehose.events_by_type_per_day' was properly closed.
+[0m14:55:34.981957 [debug] [MainThread]: Connection 'model.github_firehose.events_per_repo_per_day' was properly closed.
+[0m14:55:34.982173 [debug] [MainThread]: Connection 'model.github_firehose.issue_activity' was properly closed.
+[0m14:55:34.982366 [debug] [MainThread]: Connection 'model.github_firehose.top_contributors' was properly closed.
+[0m14:55:34.982701 [info ] [MainThread]: 
+[0m14:55:34.983387 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 17.25 seconds (17.25s).
+[0m14:55:34.986963 [debug] [MainThread]: Command end result
+[0m14:55:35.043828 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m14:55:35.048120 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m14:55:35.057236 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m14:55:35.058226 [info ] [MainThread]: 
+[0m14:55:35.058742 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:55:35.059048 [info ] [MainThread]: 
+[0m14:55:35.059310 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m14:55:35.064365 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 18.806673, "process_in_blocks": "0", "process_kernel_time": 0.451322, "process_mem_max_rss": "221855744", "process_out_blocks": "0", "process_user_time": 2.044677}
+[0m14:55:35.065047 [debug] [MainThread]: Command `dbt run` succeeded at 14:55:35.064927 after 18.81 seconds
+[0m14:55:35.065452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a6a800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103de04f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f359030>]}
+[0m14:55:35.065717 [debug] [MainThread]: Flushing usage events
+[0m14:55:36.692012 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:55:38.221011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075f6830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f491e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f48df0>]}
+
+
+============================== 14:55:38.225196 | 39e9360e-eea2-4480-8796-7b8c90a2bfa4 ==============================
+[0m14:55:38.225196 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:55:38.225646 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'fail_fast': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'static_parser': 'True', 'write_json': 'True', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'profiles_dir': '/Users/felipefumero/projects/github-firehose-activity/dbt_gh', 'quiet': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test', 'debug': 'False', 'use_colors': 'True', 'partial_parse': 'True'}
+[0m14:55:39.111655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39e9360e-eea2-4480-8796-7b8c90a2bfa4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132dc77c0>]}
+[0m14:55:39.151114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39e9360e-eea2-4480-8796-7b8c90a2bfa4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132d57ca0>]}
+[0m14:55:39.151609 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m14:55:39.269930 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:55:39.371079 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:55:39.371390 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:55:39.371567 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:55:39.403084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39e9360e-eea2-4480-8796-7b8c90a2bfa4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1335d1000>]}
+[0m14:55:39.478274 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m14:55:39.479609 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m14:55:39.491769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39e9360e-eea2-4480-8796-7b8c90a2bfa4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13354a3b0>]}
+[0m14:55:39.492146 [info ] [MainThread]: Found 5 models, 11 data tests, 6 sources, 553 macros
+[0m14:55:39.492364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39e9360e-eea2-4480-8796-7b8c90a2bfa4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1326fdf90>]}
+[0m14:55:39.493554 [info ] [MainThread]: 
+[0m14:55:39.493792 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:55:39.493962 [info ] [MainThread]: 
+[0m14:55:39.494253 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:55:39.496936 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_github-firehose-fumero_github_firehose'
+[0m14:55:39.497160 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:41.084688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39e9360e-eea2-4480-8796-7b8c90a2bfa4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132db6050>]}
+[0m14:55:41.085873 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:41.089560 [debug] [Thread-1 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:55:41.090057 [debug] [Thread-2 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:55:41.090452 [debug] [Thread-3 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:55:41.090801 [debug] [Thread-4 (]: Began running node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:55:41.091271 [info ] [Thread-1 (]: 1 of 11 START test source_not_null_github_firehose_dim_actor_actor_id .......... [RUN]
+[0m14:55:41.091721 [info ] [Thread-2 (]: 2 of 11 START test source_not_null_github_firehose_dim_org_org_id .............. [RUN]
+[0m14:55:41.092192 [info ] [Thread-3 (]: 3 of 11 START test source_not_null_github_firehose_dim_repo_repo_id ............ [RUN]
+[0m14:55:41.092570 [info ] [Thread-4 (]: 4 of 11 START test source_not_null_github_firehose_dim_time_date_key ........... [RUN]
+[0m14:55:41.093112 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_github-firehose-fumero_github_firehose, now test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b)
+[0m14:55:41.093605 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca'
+[0m14:55:41.094156 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8'
+[0m14:55:41.094623 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c'
+[0m14:55:41.095035 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:55:41.095414 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:55:41.095766 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:55:41.096119 [debug] [Thread-4 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:55:41.117912 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"
+[0m14:55:41.123013 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"
+[0m14:55:41.186985 [debug] [Thread-4 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"
+[0m14:55:41.190172 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"
+[0m14:55:41.190852 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:55:41.191162 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:55:41.204251 [debug] [Thread-4 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:55:41.208894 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"
+[0m14:55:41.209943 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"
+[0m14:55:41.210218 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:55:41.212723 [debug] [Thread-4 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"
+[0m14:55:41.215261 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"
+[0m14:55:41.215919 [debug] [Thread-1 (]: On test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:41.216376 [debug] [Thread-2 (]: On test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select org_id
+from `github-firehose-fumero`.`github_firehose`.`dim_org`
+where org_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:41.216757 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:41.217036 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:55:41.217263 [debug] [Thread-4 (]: On test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_key
+from `github-firehose-fumero`.`github_firehose`.`dim_time`
+where date_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:41.217504 [debug] [Thread-3 (]: On test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repo_id
+from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+where repo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:41.218938 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:55:41.219221 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:55:42.148991 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:2cd88855-cd06-4b7d-8b7a-76143da9da22&page=queryresults
+[0m14:55:42.156784 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:66c1f23c-e847-43e6-b608-b67a0446c77f&page=queryresults
+[0m14:55:42.168982 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:5468fd2b-efbf-4341-a1f0-1dceea7df2db&page=queryresults
+[0m14:55:42.247306 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:ba03aab5-5cc6-4f10-b7e5-b459f9cad4ac&page=queryresults
+[0m14:55:42.401893 [debug] [Thread-3 (]: SQL status: OK in 0.245 seconds
+[0m14:55:42.411835 [debug] [Thread-1 (]: SQL status: OK in 0.242 seconds
+[0m14:55:42.457904 [debug] [Thread-4 (]: SQL status: OK in 0.308 seconds
+[0m14:55:42.627626 [debug] [Thread-2 (]: SQL status: OK in 0.380 seconds
+[0m14:55:42.997579 [info ] [Thread-3 (]: 3 of 11 PASS source_not_null_github_firehose_dim_repo_repo_id .................. [[32mPASS[0m in 1.90s]
+[0m14:55:42.998923 [info ] [Thread-1 (]: 1 of 11 PASS source_not_null_github_firehose_dim_actor_actor_id ................ [[32mPASS[0m in 1.91s]
+[0m14:55:42.999773 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8
+[0m14:55:43.000241 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b
+[0m14:55:43.000590 [debug] [Thread-3 (]: Began running node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:55:43.000935 [debug] [Thread-1 (]: Began running node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:55:43.001250 [info ] [Thread-3 (]: 5 of 11 START test source_not_null_github_firehose_fact_events_actor_id ........ [RUN]
+[0m14:55:43.001549 [info ] [Thread-1 (]: 6 of 11 START test source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_  [RUN]
+[0m14:55:43.001884 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_repo_repo_id.be1cbf56d8, now test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5)
+[0m14:55:43.002161 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_actor_actor_id.278f8fce2b, now test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364)
+[0m14:55:43.002418 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:55:43.002658 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:55:43.007899 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"
+[0m14:55:43.017382 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"
+[0m14:55:43.018069 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:55:43.018380 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:55:43.020517 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"
+[0m14:55:43.023011 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"
+[0m14:55:43.024034 [debug] [Thread-1 (]: On test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select actor_id as from_field
+    from `github-firehose-fumero`.`github_firehose`.`fact_events`
+    where actor_id is not null
+),
+
+parent as (
+    select actor_id as to_field
+    from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:43.024482 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:43.024799 [debug] [Thread-3 (]: On test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select actor_id
+from `github-firehose-fumero`.`github_firehose`.`fact_events`
+where actor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:43.025825 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:55:43.204582 [info ] [Thread-4 (]: 4 of 11 PASS source_not_null_github_firehose_dim_time_date_key ................. [[32mPASS[0m in 2.11s]
+[0m14:55:43.205161 [debug] [Thread-4 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c
+[0m14:55:43.205585 [debug] [Thread-4 (]: Began running node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:55:43.206045 [info ] [Thread-4 (]: 7 of 11 START test source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_  [RUN]
+[0m14:55:43.206467 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_time_date_key.eced17a61c, now test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5)
+[0m14:55:43.207099 [debug] [Thread-4 (]: Began compiling node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:55:43.212381 [debug] [Thread-4 (]: Writing injected SQL for node "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"
+[0m14:55:43.213863 [debug] [Thread-4 (]: Began executing node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:55:43.217224 [debug] [Thread-4 (]: Writing runtime sql for node "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"
+[0m14:55:43.218250 [debug] [Thread-4 (]: On test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select repo_id as from_field
+    from `github-firehose-fumero`.`github_firehose`.`fact_events`
+    where repo_id is not null
+),
+
+parent as (
+    select repo_id as to_field
+    from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:43.218847 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:55:43.258618 [info ] [Thread-2 (]: 2 of 11 PASS source_not_null_github_firehose_dim_org_org_id .................... [[32mPASS[0m in 2.17s]
+[0m14:55:43.259153 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca
+[0m14:55:43.259444 [debug] [Thread-2 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:55:43.259702 [info ] [Thread-2 (]: 8 of 11 START test source_unique_github_firehose_dim_actor_actor_id ............ [RUN]
+[0m14:55:43.260059 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_dim_org_org_id.920769a7ca, now test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593)
+[0m14:55:43.260364 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:55:43.265904 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"
+[0m14:55:43.266864 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:55:43.269999 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"
+[0m14:55:43.270700 [debug] [Thread-2 (]: On test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select actor_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_actor`
+  where actor_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:43.271078 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:55:44.027770 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:95b1a4de-957c-4d12-a8cf-ee76884b21b5&page=queryresults
+[0m14:55:44.183647 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:634068cb-e9da-4e2b-8381-5101b64aec9d&page=queryresults
+[0m14:55:44.198814 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:4889f269-3888-405f-abbe-12179700b8ae&page=queryresults
+[0m14:55:44.265814 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:e4994027-b432-4ddc-8e7c-876bd96ff7ec&page=queryresults
+[0m14:55:44.309372 [debug] [Thread-3 (]: SQL status: OK in 0.281 seconds
+[0m14:55:44.456339 [debug] [Thread-1 (]: SQL status: OK in 0.257 seconds
+[0m14:55:44.476833 [debug] [Thread-2 (]: SQL status: OK in 0.292 seconds
+[0m14:55:44.573901 [debug] [Thread-4 (]: SQL status: OK in 0.307 seconds
+[0m14:55:44.835676 [info ] [Thread-3 (]: 5 of 11 PASS source_not_null_github_firehose_fact_events_actor_id .............. [[32mPASS[0m in 1.83s]
+[0m14:55:44.836232 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5
+[0m14:55:44.836519 [debug] [Thread-3 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:55:44.836815 [info ] [Thread-3 (]: 9 of 11 START test source_unique_github_firehose_dim_org_org_id ................ [RUN]
+[0m14:55:44.837111 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_not_null_github_firehose_fact_events_actor_id.a0da322ce5, now test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0)
+[0m14:55:44.837332 [debug] [Thread-3 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:55:44.840994 [debug] [Thread-3 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"
+[0m14:55:44.841720 [debug] [Thread-3 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:55:44.844108 [debug] [Thread-3 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"
+[0m14:55:44.845000 [debug] [Thread-3 (]: On test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select org_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_org`
+  where org_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:44.845393 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:55:45.091078 [info ] [Thread-2 (]: 8 of 11 PASS source_unique_github_firehose_dim_actor_actor_id .................. [[32mPASS[0m in 1.83s]
+[0m14:55:45.093151 [info ] [Thread-1 (]: 6 of 11 PASS source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_  [[32mPASS[0m in 2.09s]
+[0m14:55:45.093645 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593
+[0m14:55:45.094074 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364
+[0m14:55:45.094385 [debug] [Thread-2 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:55:45.094790 [debug] [Thread-1 (]: Began running node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:55:45.095138 [info ] [Thread-2 (]: 10 of 11 START test source_unique_github_firehose_dim_repo_repo_id ............. [RUN]
+[0m14:55:45.095465 [info ] [Thread-1 (]: 11 of 11 START test source_unique_github_firehose_dim_time_date_key ............ [RUN]
+[0m14:55:45.095840 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_unique_github_firehose_dim_actor_actor_id.37d1d2f593, now test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4)
+[0m14:55:45.096275 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.github_firehose.source_relationships_github_firehose_fact_events_actor_id__actor_id__source_github_firehose_dim_actor_.9876414364, now test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21)
+[0m14:55:45.096622 [debug] [Thread-2 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:55:45.097051 [debug] [Thread-1 (]: Began compiling node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:55:45.102532 [debug] [Thread-2 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"
+[0m14:55:45.106596 [debug] [Thread-1 (]: Writing injected SQL for node "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"
+[0m14:55:45.107651 [debug] [Thread-1 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:55:45.107957 [debug] [Thread-2 (]: Began executing node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:55:45.111013 [debug] [Thread-1 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"
+[0m14:55:45.113248 [debug] [Thread-2 (]: Writing runtime sql for node "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"
+[0m14:55:45.114574 [debug] [Thread-1 (]: On test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select date_key as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_time`
+  where date_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:45.114968 [debug] [Thread-2 (]: On test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "github_firehose", "target_name": "dev", "node_id": "test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select repo_id as unique_field
+  from `github-firehose-fumero`.`github_firehose`.`dim_repo`
+  where repo_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:55:45.115389 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:45.115684 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:55:45.199326 [info ] [Thread-4 (]: 7 of 11 PASS source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_  [[32mPASS[0m in 1.99s]
+[0m14:55:45.199994 [debug] [Thread-4 (]: Finished running node test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5
+[0m14:55:45.901011 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:619a0c18-b349-464d-8016-5a006dfd7cc3&page=queryresults
+[0m14:55:46.126515 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:ceb4f45c-53ca-4cba-8276-589b9019f4ec&page=queryresults
+[0m14:55:46.184609 [debug] [Thread-3 (]: SQL status: OK in 0.283 seconds
+[0m14:55:46.406984 [debug] [Thread-1 (]: SQL status: OK in 0.279 seconds
+[0m14:55:46.464774 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=github-firehose-fumero&j=bq:US:a297b747-cb21-4ec0-9b80-37424ba87448&page=queryresults
+[0m14:55:46.732716 [debug] [Thread-2 (]: SQL status: OK in 0.267 seconds
+[0m14:55:46.897401 [info ] [Thread-3 (]: 9 of 11 PASS source_unique_github_firehose_dim_org_org_id ...................... [[32mPASS[0m in 2.06s]
+[0m14:55:46.899092 [debug] [Thread-3 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0
+[0m14:55:46.951729 [info ] [Thread-1 (]: 11 of 11 PASS source_unique_github_firehose_dim_time_date_key .................. [[32mPASS[0m in 1.86s]
+[0m14:55:46.952648 [debug] [Thread-1 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21
+[0m14:55:47.304427 [info ] [Thread-2 (]: 10 of 11 PASS source_unique_github_firehose_dim_repo_repo_id ................... [[32mPASS[0m in 2.21s]
+[0m14:55:47.305927 [debug] [Thread-2 (]: Finished running node test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4
+[0m14:55:47.309192 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:55:47.310413 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:55:47.310964 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_time_date_key.57e9d5ae21' was properly closed.
+[0m14:55:47.311446 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_repo_repo_id.6b018a9ef4' was properly closed.
+[0m14:55:47.312169 [debug] [MainThread]: Connection 'test.github_firehose.source_unique_github_firehose_dim_org_org_id.c39361ecd0' was properly closed.
+[0m14:55:47.313062 [debug] [MainThread]: Connection 'test.github_firehose.source_relationships_github_firehose_fact_events_repo_id__repo_id__source_github_firehose_dim_repo_.ac3bde0ce5' was properly closed.
+[0m14:55:47.313803 [info ] [MainThread]: 
+[0m14:55:47.314409 [info ] [MainThread]: Finished running 11 data tests in 0 hours 0 minutes and 7.82 seconds (7.82s).
+[0m14:55:47.317562 [debug] [MainThread]: Command end result
+[0m14:55:47.364566 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/manifest.json
+[0m14:55:47.366939 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/semantic_manifest.json
+[0m14:55:47.374680 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/felipefumero/projects/github-firehose-activity/dbt_gh/target/run_results.json
+[0m14:55:47.375172 [info ] [MainThread]: 
+[0m14:55:47.375600 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:55:47.375888 [info ] [MainThread]: 
+[0m14:55:47.376154 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m14:55:47.380823 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 9.229698, "process_in_blocks": "0", "process_kernel_time": 0.408746, "process_mem_max_rss": "215990272", "process_out_blocks": "0", "process_user_time": 2.224703}
+[0m14:55:47.381318 [debug] [MainThread]: Command `dbt test` succeeded at 14:55:47.381252 after 9.23 seconds
+[0m14:55:47.381774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075f6830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132dc4760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077ac340>]}
+[0m14:55:47.382133 [debug] [MainThread]: Flushing usage events
+[0m14:55:47.806557 [debug] [MainThread]: An error was encountered while trying to flush usage events
